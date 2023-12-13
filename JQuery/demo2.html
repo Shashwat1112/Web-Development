@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Click event</h2>
+    Vada Pav Image <br><img id="img1" src="../Assets/Images/OIP (1).jpeg" alt="VadaPav"><br><br>
+    <hr>
+    Samosa Image <br>
+    <img id="img2" src="../Assets/Images/OIP.jpeg" alt="Samosa" height="200px">
+    <!-- <img id="img3" src="../Assets/Images/OIP (1).jpeg" alt="VadaPav"> -->
+    <hr>
+    <script>
+        $(document).ready(function(){
+            $("#img1").dblclick(function(){
+                $(this).hide();
+            });
+            $("#img2").hover(function(){
+                $(this).hide();
+            });
+            $("#img2").mouseleave(function(){
+                $(this).show();
+            });
+        });
+    </script>
+</body>
+</html>

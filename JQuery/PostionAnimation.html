@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Image Position</title>
+    <style>
+        .img1 {
+            border: 2px solid red;
+            position: relative;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Animation</h2>
+    <hr>
+    <img class="img1" src="../Assets/Images/Scene.jpeg" alt="">
+    <script>
+        $(document).ready(function(){
+            $(".img1").hover(function(){
+                $(this).animate({"left": "300px"});
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <img class="cls1" src="../Assets/Images/Scene.jpeg" alt="Scene">
+    <script>
+        $(".cls1").on({
+            mouseenter: function () {
+                $(this).css({ "border": "8px solid-green", "outline": "5px solid yellow" })
+            },
+            mouseleave: function () {
+                $(this).css({ "border": "8px solid-red", "outline": "5px solid black" })
+            },
+            click: function () {
+                $(this).css({ "border": "8px solid-red", "outline": "5px solid black", "borderRadius": "50%" })
+            },
+            
+        })
+    </script>
+</body>
+
+</html>

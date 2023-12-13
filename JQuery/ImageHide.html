@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<h1>This image wil disappear</h1>
+<br><br>
+<style>
+    .cls1 {
+        border: 8px solid red;
+        outline: 5px solid black;
+        width: 500px;
+        padding: 10px;
+        margin-top: auto;
+    }
+</style>
+
+<body>
+    <img class="cls1" src="../Assets/Images/Scene.jpeg" alt="Scene">
+    <script>
+        $(document).ready(function () {
+            $(".cls1").hover(function () {
+                $(this).hide(2000, function () {
+                    // window.alert("The image is gone");
+                    $(this).show(2000, function () { });
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
